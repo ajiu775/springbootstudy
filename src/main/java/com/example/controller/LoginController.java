@@ -2,11 +2,12 @@ package com.example.controller;
 
 import com.example.entity.User;
 import com.example.serviceimp.LoginServiceImp;
-import com.example.services.LoginService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+
+import javax.annotation.Resource;
 
 /**
  * @program: study
@@ -17,8 +18,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class LoginController {
 
-    @Autowired
+    @Resource
     private LoginServiceImp loginServiceImp;
+
+    @Resource
+    private User user;
 
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     public String login(String name, String password) {

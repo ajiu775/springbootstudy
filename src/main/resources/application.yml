@@ -1,9 +1,9 @@
 spring:
   datasource:
     name : family #数据库名
-    url : jdbc:mysql://localhost:3306/family #url
+    url : jdbc:mysql://106.52.235.72:3306/brave #url
     username : root #用户名
-    password : 12345678 #密码
+    password : 123456 #密码
     driver-class-name: com.mysql.jdbc.Driver #数据库驱动
 mybatis:
   mapper-locations: classpath:mapper/*.xml

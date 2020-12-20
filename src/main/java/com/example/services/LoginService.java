@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
  * @author: Allen
  * @create: 2020-04-10 23:05
  **/
-@Service
+@Component
 public interface LoginService {
     User login(String name,String password);
 }
